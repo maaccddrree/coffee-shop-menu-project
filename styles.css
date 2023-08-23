@@ -34,19 +34,107 @@ h1, h2, p {
 
 
 .cake {
-  background-color: rgb(181, 228, 240);
+  background-color: burlywood;
   width: 50px;
   height: 50px;
 }
 
 
+.item:hover {
+  background-color: #0abcfcf4;
+  color: rgb(244, 236, 12);
+  font-weight: bold;
+}
+
+.shop-name {
+  background: linear-gradient(0deg, rgb(0, 204, 255) 0%, rgb(236, 167, 167) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .shop-name span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .shop-name:before,
+  .shop-name:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.2s ease;
+  }
+  .shop-name:before{
+     height: 0%;
+     width: 2px;
+  }
+  .shop-name:after {
+    width: 0%;
+    height: 2px;
+  }
+  .shop-name:hover{
+    color: rgba(251,75,2,1);
+    background: transparent;
+    background-color: rgb(255, 242, 0);
+  }
+  .shop-name:hover:before {
+    height: 100%;
+  }
+  .shop-name:hover:after {
+    width: 100%;
+    
+  }
+  .shop-name span:before,
+  .shop-name span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    /* background: rgb(243, 255, 5); */
+    background-color: rgb(0, 51, 255);
+    /* color: yellow; */
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .shop-name span:before {
+    width: 2px;
+    height: 0%;
+    
+  }
+  .shop-name span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .shop-name span:hover:before {
+    height: 100%;
+  }
+  .shop-name span:hover:after {
+    width: 100%;
+  }
+  
+
+/* .price:hover {
+  background-color: rgb(56, 254, 49);
+}  */
 
 /* https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg 
 https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg */
 
 .menu {
   width: 80%;
-  background-color: rgb(236, 166, 166);
+  background-color: rgb(236, 167, 167);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;

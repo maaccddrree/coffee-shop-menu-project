@@ -1,5 +1,7 @@
 body {
-  background-image: url(beany.jpeg);
+  background-image: url("https://media.giphy.com/media/da6zf5P00RVKT0DnVk/giphy.gif");
+  background-size: cover;
+  background-position: center;
   font-family: sans-serif;
   padding: 20px;
 }

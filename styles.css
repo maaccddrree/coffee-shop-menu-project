@@ -1,7 +1,7 @@
 body {
   background-image: url("https://media.giphy.com/media/da6zf5P00RVKT0DnVk/giphy.gif");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: unset;
   font-family: sans-serif;
   padding: 20px;
 }
@@ -28,11 +28,13 @@ h1, h2, p {
   width: 50px;
   height: 50px;
   background-color: burlywood;
-  color: burlywood;
+  /* color: burlywood; */
+  /* color: red; */
 }
 
 
 .cake {
+  background-color: rgb(181, 228, 240);
   width: 50px;
   height: 50px;
 }
@@ -44,11 +46,12 @@ https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg */
 
 .menu {
   width: 80%;
-  background-color: burlywood;
+  background-color: rgb(236, 166, 166);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
+  border-radius: 20px;
 }
 
 img {
